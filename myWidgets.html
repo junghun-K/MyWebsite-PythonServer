@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="resources/css/myStyle.css">
+  <link rel="stylesheet" href="resources/css/passwordWidget.css">
+  <link rel="stylesheet" href="resources/css/weatherWidget.css">
+  <script async defer src="resources/js/weatherWidget.js"></script>
+  <script async defer src="resources/js/passwordWidget.js"></script>
+  <script async defer src="resources/js/timeWidget.js"></script>
+  <title>Ken's page: Widgets</title>
+</head>
+<body>
+  <!--nav tag copied from: https://www.w3schools.com/tags/tag_nav.asp-->
+  <nav id="navigation">
+    <a href="myContacts.html">Contacts</a> 
+    <a href="myWidgets.html">Widgets</a> 
+    <a href="myAboutMe.html">About Me</a>
+    <a href="contactMe.html">Contact Me</a>
+  </nav>
+  <h1 id="widgetTitle">My Widgets</h1>
+  <div class="row">
+    <!--Youtube Copied from: https://www.youtube.com/watch?v=y8u76Hc_6_M-->
+    <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/y8u76Hc_6_M" allowfullscreen></iframe>    
+    
+    <!--Twitter Copied from: https://publish.twitter.com/?query=https%3A%2F%2Ftwitter.com%2FUMNews%2Fstatus%2F1567890576556654592&widget=Tweet-->
+    <blockquote class="twitter-tweet" ><p lang="en" dir="ltr">We&#39;re dancing with excitement! Fall semester is here! <a href="https://twitter.com/hashtag/UMNproud?src=hash&amp;ref_src=twsrc%5Etfw">#UMNproud</a> <a href="https://t.co/WyMxfNb19z">pic.twitter.com/WyMxfNb19z</a></p>&mdash; University of Minnesota (@UMNews) <a href="https://twitter.com/UMNews/status/1567890576556654592?ref_src=twsrc%5Etfw">September 8, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js"></script>
+  </div>
+
+  
+  <div class="row">
+    <!-- password -->
+    <div id="passwordContainer">
+      <div id="header">
+        <h2>Password Strength Checking with JS</h2>
+        <hr>
+      </div>
+      <div id="content">
+        <form id="register" name="register">
+          <label for="password">Password :</label> 
+                          
+          <input name = "password"
+                  id   = "password"
+                  type = "password"
+                  placeholder ="Type Your Password here">
+
+          &nbsp;&nbsp; 
+
+          <span id="pwdresult"></span>
+        </form>
+      </div>
+    </div>
+
+    <!-- time left widget -->
+    <div id="timeContainer">
+      <div id="timeHeader">
+        <h2>Time Until the end of the semester</h2>
+        <hr>
+      </div>
+      <div id="timeContent">
+        <span id="timeResult"></span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- weather widget -->
+  <div id="weatherContainer">
+    <div id="weatherHeader">
+        <h2>weather</h2>
+        <hr>
+    </div>
+    <div id="weatherContent">
+        <p id="weatherStatus"></p>
+        <div>
+            <span>Coordinates:</span>
+            <input id="latitude-input" type="text" placeholder="Latitude">
+            <input id="longitude-input" type="text" placeholder="Longitude">
+        </div>
+        <div>
+            <button id="find-me" type="button">Auto-Find me!</button>
+            <button id="get-weather-btn" type="button">Find The Weather!</button>
+        </div>
+
+        <div id="weatherOutput">
+            <p id="temp-display"></p>
+            <p id="cloud-cover-display"></p>
+            <p id="sunrise-display"></p>
+            <p id="sunset-display"></p>
+        </div>
+        <!-- Interesting fact. We're legally required to put this here. -->
+        <a href="https://open-meteo.com/">Weather data by Open-Meteo.com</a>
+        <a href="https://sunrise-sunset.org/">Sunrise and sunset data by sunrise-sunset.org</a>
+    </div>
+</div>
+</body>
+</html>

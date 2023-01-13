@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="resources/css/myStyle.css">
+  <script async defer src="resources/js/contactMe.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ken's page: Leave a Message</title>
+</head>
+<body>
+  <nav id="navigation">
+    <a href="myContacts.html">Contacts</a> 
+    <a href="myWidgets.html">Widgets</a> 
+    <a href="myAboutMe.html">About Me</a>
+    <a href="contactMe.html">Contact Me</a>
+  </nav>
+  <div id="formContainer">
+    <form id="form" action="http://localhost:9001" method="POST">
+      <h1>Contact Me</h1>
+      <p>Required fields are marked with *</p>
+      
+      <label for="title">Title:*</label><br>
+      <input type="text" id="title" name="postTitle" required><br>
+      <!-- Referenced from: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_email -->
+      <label for="email">Email:*</label><br>
+      <input type="email" id="email" name="email" title="It should include @ sign" required><br>
+  
+      <label for="user">Username:*</label><br>
+      <input type="text" id="user" name="username" required><br>
+      <!-- Referemced from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url -->
+      <label for="link">Link:</label><br>
+      <input type="url" id="link" name="link"><br>
+      
+      <!--Referenced from: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_fieldset -->
+      <fieldset id="field">
+        <legend>Category of message:*</legend>
+        <input type="radio" id="question" name="category" value="question" required>
+        <label for="question">Question</label><br>
+        <input type="radio" id="comment" name="category" value="comment">
+        <label for="comment">Comment</label><br>
+        <input type="radio" id="concern" name="category" value="concern">
+        <label for="concern">Concern</label>
+      </fieldset>
+      <p id="concernbox">
+        In order to best address your concern, 
+        please make sure to list the specific way 
+        in which I have wronged you.
+      </p>
+      <br>
+      <!-- Referenced from: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_textarea -->
+      <label for="message">Message:*</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br>
+
+      <button>Submit</button>
+    </form>
+  </div>
+</body>
+</html>

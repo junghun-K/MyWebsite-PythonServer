@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="resources/css/myStyle.css">
+  <script src="resources/js/myContacts.js"></script>
+  <title>Ken's page: Contacts Information</title>
+</head>
+<body>
+  <!--nav tag copied from: https://www.w3schools.com/tags/tag_nav.asp-->
+  <nav id="navigation" >
+    <a href="myContacts.html">Contacts</a> 
+    <a href="myWidgets.html">Widgets</a> 
+    <a href="myAboutMe.html">About Me</a>
+    <a href="contactMe.html">Contact Me</a>
+  </nav>
+
+  <!--All tags and information was referenced by zybook-->
+  <h1 id="contact_head">Contacts</h1>
+  
+  <!--Contact Table-->
+  <div id="table_container">
+    <table id="contact_table">
+      <!--Header row-->
+      <tr>
+        <th onclick="sortBy(0)">Name</th>
+        <th onclick="sortBy(1)">Location</th>
+        <th onclick="sortBy(2)">Contact Information</th>
+        <th onclick="sortBy(3)">email</th>
+        <th onclick="sortBy(4)">website</th>
+      </tr>
+      <!--5 Information row-->
+      <!--referenced from: https://www.codegrepper.com/code-examples/javascript/how+to+change+image+source+using+javascript-->
+      <!-- <tr onmouseenter="changeImage('resources/images/me.jpg')" 
+          onmouseleave="changeImage('resources/images/gophers-mascot.png')"> -->
+      <tr>
+        <td>Ken</td>
+        <td><img src="resources/images/me.jpg" alt="No picture available" id="ken">#210 Dinnaken House <br>900 Washington Ave SE<br> Minneapolis, MN 55414</td>
+        <td>Me, Jeonghoon Kim from South Korea</td>
+        <td><a href="mailto:kimx5154@umn.edu">kimx5154@umn.edu</a></td>
+        <td><a href="https://www.linkedin.com/in/junghun-kim-42362a24b/" target="_blank">Ken's LinkedIn</a></td>
+      </tr>
+      <tr onmouseenter="changeImage('resources/images/google.jpg')" 
+          onmouseleave="changeImage('resources/images/gophers-mascot.png')">
+        <td>Google</td>
+        <td><img src="resources/images/google.jpg" alt="No picture available" id="google">Headquarters <br>1600 Amphitheatre Parkway<br> Mountain View, CA 94043</td>
+        <td>Google, the best search engine</td>
+        <td><a href="mailto:support-in@google.com">support-in@google.com</a></td>
+        <td><a href="https://www.google.com/" target="_blank">Google</a></td>
+      </tr>
+      <tr onmouseenter="changeImage('resources/images/amazon.png')" 
+          onmouseleave="changeImage('resources/images/gophers-mascot.png')">
+        <td>Amazon</td>
+        <td><img src="resources/images/amazon.png" alt="No picture available" id="amazon">410 Terry Ave N, <br> Seattle, WA 98109</td>
+        <td>Amazon, where I search or buy the product I need</td>
+        <td><a href="mailto:cs-reply@amazon.com">cs-reply@amazon.com</a></td>
+        <td><a href="https://www.amazon.com/" target="_blank">Amazon</a></td>
+      </tr>
+      <tr onmouseenter="changeImage('resources/images/meta.jpg')" 
+          onmouseleave="changeImage('resources/images/gophers-mascot.png')">
+        <td>Meta</td>
+        <td><img src="resources/images/meta.jpg" alt="No picture available" id="meta">One Hacker Way<br> Menlo Park, CA 94025</td>
+        <td>Known as Facebook</td>
+        <td><a href="mailto:support@fb.com">support@fb.com</a></td>
+        <td><a href="https://about.facebook.com/" target="_blank">Meta</a></td>
+      </tr>
+      <tr onmouseenter="changeImage('resources/images/coffman.jpg')" 
+          onmouseleave="changeImage('resources/images/gophers-mascot.png')">
+        <td>UMN IT</td>
+        <td><img src="resources/images/coffman.jpg" alt="No picture available" id="coffman">300 Washington Ave S.E.<br> Minneapolis, MN 55455</td>
+        <td>UMN Information Technology</td>
+        <td><a href="mailto:help@umn.edu">help@umn.edu</a></td>
+        <td><a href="https://it.umn.edu/how-get-technology-help" target="_blank">UMN Information Technology</a></td>
+      </tr>
+    </table>
+    <!-- referenced from: https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php -->
+    <div id="example_img">
+      <img src="resources/images/gophers-mascot.png" alt="No picture available" id="img_top">
+    </div>
+  </div>
+</body>
+</html>

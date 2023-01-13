@@ -1,0 +1,213 @@
+body {
+  background-color: #cccc3d;
+  margin: 0px;
+}
+/* ContactMe CSS */
+#concernbox {
+  /* display: none; */
+  display: none;
+  width: 50%;
+  margin-left: 3%;
+  margin-right: 1%;
+  margin-bottom: 0px;
+  padding: 1% 3%;
+  border-style: solid;
+  border-color: red;
+  border-width: 2px;
+  /* align-items: flex-start; */
+  /* float: right; */
+}
+#field {
+  display: inline-block;
+  align-items:flex-start;
+}
+#formContainer{
+  /* margin: 50%; */
+  display: flex;
+  justify-content: center;
+}
+#form {
+  margin-top: 7%;
+  margin-bottom: 7%;
+  border-radius: 3em; 
+  /* box-shadow: 0 0 0.5em; */
+  border-width: 0px;
+  background-color: rgb(228, 228, 221); 
+  width: 50%;
+  padding: 3%;
+}
+#form h1{
+  text-align: center;
+}
+#form textarea {
+  width: 80%;
+}
+
+/* Widgets CSS */
+
+#widgetTitle {
+  margin-left: 2%;
+}
+
+/* referenced from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#timeContainer {
+  width: 34em;
+  background: #ffffff;
+  padding: 1.25em;
+  margin: 5.5em auto;
+  border-radius: 0.4em;
+  height: 9em;
+  border: 2px solid gray;
+}
+#timeContainer #timeHeader {
+  text-align: center;
+  background-color: #FEFFED;
+  border-radius: 0.25em;
+  margin: -39px -20px 10px -20px;
+}
+
+#timeContainer h2{
+  padding-top: 10px;
+}
+
+#timeContainer #timeContent {
+  margin-left: 57px;
+  margin-top: 40px;
+}
+
+#youtube {
+  border-width: 0px;
+}
+
+/* Contacts CSS */
+
+#contact_head {
+  text-align: center;
+}
+
+/* referenced from: https://stackoverflow.com/questions/4804581/how-can-i-expand-floated-child-divs-height-to-parents-height */
+#ken, #google, #amazon, #meta, #coffman {
+  display: none;
+  right: 0;
+  height: 0;
+}
+
+#table_container #contact_table tr:hover #ken,
+#table_container #contact_table tr:hover #google, 
+#table_container #contact_table tr:hover #amazon, 
+#table_container #contact_table tr:hover #meta, 
+#table_container #contact_table tr:hover #coffman {
+  display: inline;
+  float: right;
+  width: 40%;
+  height: 40%;
+}
+
+#table_container #example_img #img_top{
+  max-width: 60%;
+  max-height: 35%;
+}
+
+#table_container {
+  display: flex;
+  align-items: center;
+}
+
+#table_container #contact_table tr:nth-child(odd) {
+  background-color: #ccccb4;
+}
+
+#table_container #contact_table tr:nth-child(even) {
+  background-color: #808070;
+}
+
+#table_container #contact_table th, #table_container #contact_table td {
+  border: 2px solid black;
+}
+
+#table_container #contact_table {
+  border-collapse: collapse;
+  float: left;
+  width: 50%;
+  margin: 1% 5%;
+}
+
+/* About Me */
+
+/* referenced from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+div#col_container {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+/* referenced from ICE2 */
+div#col_container .columns {
+  border-radius: 3em; 
+  /* box-shadow: 0 0 0.5em; */
+  border-width: 0px;
+  background-color: beige; 
+  width: 40%;
+  padding: 0 15px;
+  margin: 3% 1.5%;
+}
+
+div#col_container .columns h2{
+  text-align: center;
+} 
+
+div#col_container .columns p strong{
+  color: #9e1208;
+}
+
+div#col_container .columns p em{
+  color: rgb(249, 13, 249);
+}
+
+/* referenced from: https://www.w3schools.com/howto/howto_css_image_center.asp */
+#main_picture { 
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Update fonts and center */
+#name {
+  font-size: 10vw;
+  font-family: 'Audiowide', 'sans-serif'; /*a name to be used later*/
+  text-align: center;
+}
+
+/* Navigation bar */
+
+/* referenced from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+#navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #556b2f;
+}
+
+#navigation a {
+  max-width: fit-content;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #6b8e23;
+  border-radius: 25px;
+  padding: 0.5em 0.5em;
+  margin: 0.4% 7%;
+} 
+
+#navigation a:hover {
+  background-color: #ffffe0;
+}
+

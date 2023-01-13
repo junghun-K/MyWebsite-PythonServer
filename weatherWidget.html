@@ -1,0 +1,38 @@
+<!-- copy this into the <head> part of your widget page -->
+    <link rel="stylesheet" href="weatherWidget.css">
+    <script async defer src="weatherWidget.js"></script>
+    
+    <!-- copy this in as a widget in your widgets
+    You can make modifications as needed both to the outer div, and inner div elements
+    but you don't _need_ to make any changes if you don't want to.-->
+    
+    <div id="weatherContainer">
+        <div id="weatherHeader">
+            <h2>weather</h2>
+            <hr>
+        </div>
+        <div id="weatherContent">
+            <p id="weatherStatus"></p>
+            <div>
+                <span>Coordinates:</span>
+                <input id="latitude-input" type="text" placeholder="Latitude">
+                <input id="longitude-input" type="text" placeholder="Longitude">
+            </div>
+            <div>
+                <button id="find-me" type="button">Auto-Find me!</button>
+                <button id="get-weather-btn" type="button">Find The Weather!</button>
+            </div>
+            </form>
+
+            <div id="weatherOutput">
+                <p id="temp-display"></p>
+                <p id="cloud-cover-display"></p>
+                <p id="sunrise-display"></p>
+                <p id="sunset-display"></p>
+            </div>
+            <!-- Interesting fact. We're legally required to put this here. -->
+            <a href="https://open-meteo.com/">Weather data by Open-Meteo.com</a>
+            <a href="https://sunrise-sunset.org/">Sunrise and sunset data by sunrise-sunset.org</a>
+        </div>
+    </div>
+    
